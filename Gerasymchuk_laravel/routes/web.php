@@ -3,6 +3,9 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\RestTestController;
 use App\Http\Controllers\DiggingDeeperController;
+use App\Http\Controllers\Api\Blog\PostController;
+
+Route::get('api/blog/posts', [\App\Http\Controllers\Api\Blog\PostController::class, 'index']);
 
 
 Route::get('/', function () {
